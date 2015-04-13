@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Microsoft Band iOS Sample View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r5c-6u-2HA"/>
+                        <viewControllerLayoutGuide type="bottom" id="kXA-hb-hsm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Microsoft Band!!!" translatesAutoresizingMaskIntoConstraints="NO" id="b98-Gy-XIf">
+                                <rect key="frame" x="16" y="221" width="382" height="495"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0079773027569999995" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ep-fQ-TEL">
+                                <rect key="frame" x="16" y="66" width="382" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Start Accelerometer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartAccelerometerClick:" destination="vXZ-lx-hvc" id="54" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap &quot;Start Accelerometer&quot; to get data..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOz-tK-FAl">
+                                <rect key="frame" x="16" y="186" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="15" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38">
+                                <rect key="frame" x="16" y="104" width="382" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Toggle App Tile">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OnRunClick:" destination="40" id="39" eventType="touchUpInside"/>
+                                    <action selector="ToggleAppTileClick:" destination="vXZ-lx-hvc" id="55" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44">
+                                <rect key="frame" x="16" y="142" width="382" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Send Message">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OnRunClick:" destination="46" id="45" eventType="touchUpInside"/>
+                                    <action selector="SendMessageClick:" destination="vXZ-lx-hvc" id="56" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60">
+                                <rect key="frame" x="16" y="28" width="382" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Connect to Band">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartAccelerometerClick:" destination="62" id="61" eventType="touchUpInside"/>
+                                    <action selector="ConnectToBandClick:" destination="vXZ-lx-hvc" id="69" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint id="9" constant="16" firstItem="kh9-bI-dsS" firstAttribute="trailing" secondItem="7ep-fQ-TEL" secondAttribute="trailing"/>
+                            <constraint id="12" firstItem="kh9-bI-dsS" firstAttribute="trailing" secondItem="xOz-tK-FAl" secondAttribute="trailing" constant="16"/>
+                            <constraint id="16" firstItem="kh9-bI-dsS" firstAttribute="trailing" secondItem="b98-Gy-XIf" secondAttribute="trailing" constant="16"/>
+                            <constraint firstItem="7ep-fQ-TEL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="25"/>
+                            <constraint firstItem="b98-Gy-XIf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="29"/>
+                            <constraint firstItem="xOz-tK-FAl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="30"/>
+                            <constraint firstItem="38" firstAttribute="top" secondItem="7ep-fQ-TEL" secondAttribute="bottom" constant="8" id="41"/>
+                            <constraint firstItem="kh9-bI-dsS" firstAttribute="trailing" secondItem="38" secondAttribute="trailing" constant="16" id="42"/>
+                            <constraint firstItem="38" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="43"/>
+                            <constraint firstItem="44" firstAttribute="top" secondItem="38" secondAttribute="bottom" constant="8" id="47"/>
+                            <constraint firstItem="kh9-bI-dsS" firstAttribute="trailing" secondItem="44" secondAttribute="trailing" constant="16" id="49"/>
+                            <constraint firstItem="44" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="50"/>
+                            <constraint firstItem="xOz-tK-FAl" firstAttribute="top" secondItem="44" secondAttribute="bottom" constant="14" id="51"/>
+                            <constraint firstItem="b98-Gy-XIf" firstAttribute="top" secondItem="xOz-tK-FAl" secondAttribute="bottom" constant="14" id="53"/>
+                            <constraint firstItem="60" firstAttribute="top" secondItem="r5c-6u-2HA" secondAttribute="bottom" constant="8" id="63"/>
+                            <constraint firstItem="60" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="64"/>
+                            <constraint firstItem="kh9-bI-dsS" firstAttribute="trailing" secondItem="60" secondAttribute="trailing" constant="16" id="65"/>
+                            <constraint firstItem="7ep-fQ-TEL" firstAttribute="top" secondItem="60" secondAttribute="bottom" constant="8" id="67"/>
+                            <constraint firstItem="kh9-bI-dsS" firstAttribute="bottom" secondItem="b98-Gy-XIf" secondAttribute="bottom" constant="20" id="68"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="OutputText" destination="b98-Gy-XIf" id="name-outlet-b98-Gy-XIf"/>
+                        <outlet property="AccelerometerDataText" destination="xOz-tK-FAl" id="name-outlet-xOz-tK-FAl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="B.png" width="46" height="46"/>
+        <image name="Bb.png" width="24" height="24"/>
+    </resources>
+</document>

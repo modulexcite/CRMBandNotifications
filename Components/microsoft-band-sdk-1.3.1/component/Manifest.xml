@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="microsoft-band-sdk">
+  <name>Microsoft Band SDK Preview</name>
+  <publisher>Xamarin Inc</publisher>
+  <publisher-url>http://xamarin.com</publisher-url>
+  <src-url>https://github.com/mattleibow/Microsoft-Band-SDK-Bindings</src-url>
+  <version>1.3.1</version>
+  <summary>Extend the experience of your application to your users' wrists via a new dimension of interaction.</summary>
+  <packages>
+    <package id="Microsoft.Band" version="1.3.10219-preview" framework="winphone-8.1" />
+  </packages>
+  <screenshots>
+    <img src="screenshots/microsoft-band-apps.png" title="microsoft-band-apps" />
+  </screenshots>
+  <samples>
+    <sample id="RotatingHandAndroid">
+      <name>Android Sample</name>
+      <summary>Android Sample</summary>
+    </sample>
+    <sample id="Microsoft.Band.iOS.Sample">
+      <name>iOS Feature Sample</name>
+      <summary>iOS Feature Sample</summary>
+    </sample>
+    <sample id="Microsoft.Band.Android.Sample">
+      <name>Android Feature Sample</name>
+      <summary>Android Feature Sample</summary>
+    </sample>
+    <sample id="RotatingHandWPA">
+      <name>Windows Phone Sample</name>
+      <summary>Windows Phone Sample</summary>
+    </sample>
+  </samples>
+</component>
